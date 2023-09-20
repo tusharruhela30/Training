@@ -1,18 +1,17 @@
 let currentName = "Divyanshu";
 let log = [];
-const defaultResult = 0;
+const defaultResult =0;
 let currentResult = defaultResult;
 
- 
+// get input values
+function getUserNumberInput() {
+    return parseInt(usrInput.value);
+  } 
+
 // Generate result
 function createAndWriteOutput(operator, resultBeforeCalc, calcNumber) {
   const calcDescription = `${resultBeforeCalc} ${operator} ${calcNumber}`;
   outputResult(currentResult, calcDescription);
-}
-
-// get input values
-function getUserNumberInput() {
-  return parseInt(userInput.value);
 }
 
 function writeToLog(operationIdentifier,prevResult,operationNumber,newResult) {
@@ -21,7 +20,7 @@ function writeToLog(operationIdentifier,prevResult,operationNumber,newResult) {
       number: operationNumber,
       result: newResult
     };
-    
+
     log.push(logEntry);
     console.log(log);
   }
@@ -80,5 +79,3 @@ function stringify(n1) {
   return `Result: ${n1}`;
 }
 
-subtract(12, 10);
-stringify(10);
