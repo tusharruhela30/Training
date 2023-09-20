@@ -5,7 +5,7 @@ let currentResult = defaultResult;
 
 // get input values
 function getUserNumberInput() {
-    return parseInt(usrInput.value);
+    return parseInt(userInput.value);
   } 
 
 // Generate result
@@ -24,6 +24,8 @@ function writeToLog(operationIdentifier,prevResult,operationNumber,newResult) {
     log.push(logEntry);
     console.log(log);
   }
+
+
 
 // Adding
 function add() {
