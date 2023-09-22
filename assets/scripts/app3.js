@@ -200,7 +200,7 @@ function strongAttackHandler() {
     attackMonster(mode_strong_attack)
 }
 function healPlayerHandler(){
-    let  healData;
+    let healData;
     if(currentPlayerHealth >= chosenMaxLife - healValue){
         alert("You can't heal to more than your max initial health.");
         healData = chosenMaxLife - currentPlayerHealth;
@@ -242,3 +242,5 @@ attackBtn.addEventListener("click", attackHandler);
 strongAttackBtn.addEventListener("click",strongAttackHandler);
 healBtn.addEventListener("click",healPlayerHandler);
 logBtn.addEventListener('click', printLogHandler);
+
+
